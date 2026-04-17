@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiance Manganyi - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Calibri', 'Arial', Helvetica, sans-serif;
+            line-height: 1.4;
+            color: #000;
+            background-color: #e6e6e6;
+            padding: 40px 20px;
+        }
+
+        .resume {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px 35px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+                margin: 0;
+            }
+            .resume {
+                box-shadow: none;
+                padding: 0.2in;
+                max-width: 100%;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            .section-title {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 15px;
+        }
+
+        .name {
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .contact-info {
+            font-size: 13px;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .contact-info span {
+            margin: 0 8px;
+        }
+
+        /* Section styling */
+        .section {
+            margin-bottom: 18px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1.5px solid #333;
+            padding-bottom: 3px;
+            margin-bottom: 10px;
+        }
+
+        /* Sub-sections */
+        .job, .project, .education-item {
+            margin-bottom: 12px;
+        }
+
+        .job-header, .project-header, .edu-header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        .job-title, .project-title {
+            font-size: 15px;
+        }
+
+        .company, .project-date, .edu-date {
+            font-style: italic;
+            font-weight: normal;
+            font-size: 13px;
+        }
+
+        .job-date {
+            font-weight: normal;
+            font-size: 13px;
+        }
+
+        .job-location {
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 6px;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 5px;
+        }
+
+        .skill-category {
+            font-weight: bold;
+            min-width: 180px;
+        }
+
+        .skill-text {
+            flex: 1;
+        }
+
+        .skill-item {
+            margin-bottom: 6px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 4px;
+            margin-bottom: 6px;
+        }
+
+        li {
+            font-size: 13px;
+            line-height: 1.45;
+            margin-bottom: 3px;
+        }
+
+        p {
+            font-size: 13px;
+            line-height: 1.45;
+            margin-bottom: 8px;
+        }
+
+        .reference {
+            margin-bottom: 8px;
+        }
+
+        .ref-name {
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .ref-details {
+            font-size: 12px;
+            margin-left: 15px;
+            color: #444;
+        }
+
+        hr {
+            margin: 8px 0;
+            border: 0.5px solid #ccc;
+        }
+
+        .inline-code {
+            font-family: monospace;
+            font-size: 12px;
+        }
+
+        footer {
+            margin-top: 15px;
+            font-size: 11px;
+            text-align: center;
+            color: #777;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <!-- Header -->
+        <div class="header">
+            <div class="name">EXPERIANCE MANGANYI</div>
+            <div class="contact-info">
+                Springs, Gauteng, South Africa | 063 854 1356 | E.magoda2000@gmail.com<br>
+                GitHub: github.com/experiancemanganyi
+            </div>
+        </div>
+
+        <!-- Professional Summary -->
+        <div class="section">
+            <div class="section-title">Professional Summary</div>
+            <p>Final-year Computer Systems Engineering student with hands-on experience in software development, AI systems, embedded systems, industrial automation, and workflow automation. Skilled in building neural networks from scratch, developing Retrieval-Augmented Generation (RAG) systems, and designing real-time embedded solutions. Strong foundation in Python, C++, and modern AI technologies. Passionate about building intelligent, scalable, and automated systems that solve real-world problems.</p>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="section">
+            <div class="section-title">Technical Skills</div>
+            
+            <div class="skill-item"><span class="skill-category">Programming Languages:</span> Python (Intermediate-Advanced), C++ (Intermediate-Advanced), C# (Intermediate), Java (Intermediate), JavaScript (Intermediate), PHP (Intermediate), HTML & CSS (Intermediate), MQL4/MQL5 (Advanced)</div>
+            
+            <div class="skill-item"><span class="skill-category">AI & Machine Learning:</span> Neural Networks (C++ & Python - built from scratch), Reinforcement Learning (Q-Learning), Retrieval-Augmented Generation (RAG) Systems, AI Agent Development, Unity ML-Agents</div>
+            
+            <div class="skill-item"><span class="skill-category">Industrial & PLC Programming:</span> Ladder Logic (LD), Function Block Diagram (FBD), PLC-based automation and control systems, Industrial process control fundamentals</div>
+            
+            <div class="skill-item"><span class="skill-category">Embedded Systems:</span> ESP32, Arduino Uno, Raspberry Pi, Sensor integration, real-time embedded systems</div>
+            
+            <div class="skill-item"><span class="skill-category">Electronics & Electrical Engineering:</span> Circuit design, embedded systems fundamentals, hardware interfacing, DC/AC circuits, control principles, power concepts, Digital Systems & Computer Architecture, Digital Processing Concepts (DPC)</div>
+            
+            <div class="skill-item"><span class="skill-category">Tools & Platforms:</span> ServiceNow, n8n, Semantic Kernel, DeepEval, Git & GitHub, Linux (Intermediate)</div>
+        </div>
+
+        <!-- Professional Experience -->
+        <div class="section">
+            <div class="section-title">Professional Experience</div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Software Intern (AI / Automation Focus)</span>
+                    <span class="job-date">2024 – Present</span>
+                </div>
+                <div class="company">Intelliscient Technologies</div>
+                <ul>
+                    <li>Developed workflow automation solutions using ServiceNow</li>
+                    <li>Built RAG systems using Semantic Kernel to analyze emails and automate task assignment</li>
+                    <li>Designed AI-driven automation workflows using n8n integrating RAG pipelines</li>
+                    <li>Developed WhatsApp chatbot for customer support and appointment scheduling</li>
+                    <li>Collaborated on an interview training platform for candidate onboarding</li>
+                    <li>Integrated APIs and Python automation scripts to reduce manual workload</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Creditor Clerk (Learnership)</span>
+                    <span class="job-date">2 Years</span>
+                </div>
+                <div class="company">EnviroServ Waste Management</div>
+                <ul>
+                    <li>Managed creditor accounts including invoice processing and reconciliation</li>
+                    <li>Maintained financial records and administrative documentation</li>
+                    <li>Assisted in reporting, data capturing, and workflow coordination</li>
+                    <li>Improved internal administrative efficiency through structured processes</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="section">
+            <div class="section-title">Projects</div>
+            
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-title">AI Navigation System for Visually Impaired (Final Year Project)</span>
+                </div>
+                <p>Built AI-based assistive navigation system using Raspberry Pi (computer vision), ESP32 (neural network logic), and Arduino Uno (sensor data). Delivered haptic feedback and voice guidance for obstacle detection. Applied electronics and control principles.</p>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-title">Neural Network Systems (C++ & Python)</span>
+                </div>
+                <p>Designed and implemented neural networks from scratch including forward propagation, backpropagation, training pipelines, and evaluation methods.</p>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-title">Neural Network Trading System (MQL5)</span>
+                </div>
+                <p>Developed deep learning trading prediction system with reinforcement learning (Q-learning) for adaptive buy/sell/hold trading signals.</p>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-title">Trading Bots & Indicators (MQL4/MQL5)</span>
+                </div>
+                <p>Built automated trading bots (Expert Advisors), custom technical indicators, and algorithmic trading strategies.</p>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-title">AI RAG Systems & Chatbots</span>
+                </div>
+                <p>Built RAG-based AI systems using Semantic Kernel and n8n to automate customer interaction and internal workflows.</p>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-title">Unity ML-Agents Simulation</span>
+                </div>
+                <p>Developed reinforcement learning agents using Unity ML-Agents for simulated environments.</p>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-title">Personal Portfolio Website</span>
+                </div>
+                <p>Built responsive portfolio using HTML, CSS, and JavaScript showcasing projects and skills.</p>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <div class="section-title">Education</div>
+            
+            <div class="education-item">
+                <div class="job-header">
+                    <span class="job-title">Diploma in Computer Systems Engineering (Final Year)</span>
+                    <span class="job-date">Expected: August 2025</span>
+                </div>
+                <div class="company">Tshwane University of Technology</div>
+                <p><strong>Core Engineering Modules:</strong> Programming (Python, C++, C#, Java, JavaScript, PHP), Electronics (circuit design, embedded systems fundamentals, hardware interfacing), Electrical Engineering fundamentals (DC/AC circuits, control principles, power concepts), Digital Systems & Computer Architecture, Digital Processing Concepts (DPC), Industrial Automation & Control Systems, PLC Programming (Ladder Logic, Function Block Diagram), Embedded Systems Design and Integration</p>
+                <p><strong>Applied Work:</strong> Built embedded AI systems combining hardware (ESP32, Arduino, Raspberry Pi). Applied electronics and control principles in final-year AI navigation system.</p>
+            </div>
+
+            <div class="education-item" style="margin-top: 10px;">
+                <div class="job-header">
+                    <span class="job-title">National Senior Certificate (Matric)</span>
+                    <span class="job-date">Completed: 2017</span>
+                </div>
+                <div class="company">Semendhe Secondary School</div>
+            </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="section">
+            <div class="section-title">Certifications & Training</div>
+            <ul style="margin-top: 0;">
+                <li>ServiceNow (Completed)</li>
+                <li>n8n Automation & AI Workflows</li>
+                <li>Semantic Kernel Development</li>
+                <li>DeepEval LLM Testing & Evaluation</li>
+                <li>Additional Udemy courses (AI, Programming, Development)</li>
+            </ul>
+        </div>
+
+        <!-- References -->
+        <div class="section">
+            <div class="section-title">References</div>
+            
+            <div class="reference">
+                <div class="ref-name">Aseem Saxena</div>
+                <div class="ref-details">Founder, Intelliscient Technologies<br>
+                Email: aseem.saxena@intelliscient.co.za | Phone: 082 645 8591</div>
+            </div>
+
+            <div class="reference">
+                <div class="ref-name">EnviroServ Waste Management (Training Department)</div>
+                <div class="ref-details">Email: training@enviroserv.co.za | Phone: 082 779 6251</div>
+            </div>
+
+            <div class="reference">
+                <div class="ref-name">K.W Manganyi</div>
+                <div class="ref-details">Email: kwmanganyi47@gmail.com | Cell: 073 530 9877</div>
+            </div>
+
+            <p style="margin-top: 6px; font-size: 12px;">Additional references available upon request.</p>
+        </div>
+
+        <footer>
+            Experiance Manganyi | Updated April 2026
+        </footer>
+    </div>
+</body>
+</html>
